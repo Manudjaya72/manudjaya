@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #2d5c2b;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .menu li {
+            margin: 0 15px;
+            position: relative;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #2d5c2b;
+            list-style: none;
+            padding: 10px;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            z-index: 100;
+        }
+        .menu li:hover .submenu {
+            display: block;
+        }
+        .submenu li a:hover {
+            background-color: #3e7b3b;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .adventure {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .adventure img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .adventure-info {
+            flex: 1;
+        }
+        button {
+            background-color: #2d5c2b;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Desa Manud Jaya</div>
+        <ul class="menu">
+            <li>
+                <a href="#">Catalog Layanan</a>
+                <ul class="submenu">
+                    <li><a href="#">Eco-Education</a></li>
+                    <li><a href="#">Eco-Adventure</a></li>
+                    <li><a href="#">Eco-Homestay</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Eco-Adventure</h2>
+        <div class="adventure">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB4Vit7DYQ8rfBFfR-LEIdYmuybjwtZ23WiNetz2YKDIO2DiLHZS7PJul_lLW8E9Ydnivc9gbfXIH31x112thYXRpSJjCQGHMfKTePW3zf8gicEU00aNPfvSZ5ukQo_An0SdgOTNtTSVHADCflGLnpSO88VvT5mPIUvtZK-XCjnAoHykzVyB2Ff55iNvY/s2896/BEST%20PHOTO%20(14).JPG" alt="Rafting">
+            <div class="adventure-info">
+                <h3>Rafting</h3>
+                <p>Menikmati arus sungai dengan perahu karet.</p>
+                <p>Harga: Rp 150.000</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="adventure">
+            <img src="https://trekkingwisatasentul.com/wp-content/uploads/2022/05/3gunung-pancar-bukit-paniisan-1-e1654013097246.jpg" alt="Tracking Bukit">
+            <div class="adventure-info">
+                <h3>Tracking Bukit</h3>
+                <p>Menjelajahi jalur hiking di bukit yang indah.</p>
+                <p>Harga: Rp 100.000</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="adventure">
+            <img src="https://asset.kompas.com/crops/IVj_PUGOdZu2uWVg5ItHTtS659Q=/0x0:1000x667/750x500/data/photo/2017/10/23/09571111508727130158-indonesia-tourism-sumba.jpg" alt="Mengunjungi Air Terjun">
+            <div class="adventure-info">
+                <h3>Mengunjungi Air Terjun</h3>
+                <p>Merasakan kesejukan air terjun alami.</p>
+                <p>Harga: Rp 80.000</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="adventure">
+            <img src="https://pict.sindonews.net/dyn/1280/salsabila/photo/2023/01/19/1/40089/mengunjungi-bendungan-kuwil-kawangkoan-di-minahasa-utara-gru.jpg" alt="Mengunjungi Bendungan">
+            <div class="adventure-info">
+                <h3>Mengunjungi Bendungan</h3>
+                <p>Menyaksikan keindahan bendungan dan lingkungannya.</p>
+                <p>Harga: Rp 90.000</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Homestay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #2d5c2b;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .menu li {
+            margin: 0 15px;
+            position: relative;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #2d5c2b;
+            list-style: none;
+            padding: 10px;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            z-index: 100;
+        }
+        .menu li:hover .submenu {
+            display: block;
+        }
+        .submenu li a:hover {
+            background-color: #3e7b3b;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .homestay {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .homestay img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .homestay-info {
+            flex: 1;
+        }
+        button {
+            background-color: #2d5c2b;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Desa Manud Jaya</div>
+        <ul class="menu">
+            <li>
+                <a href="#">Catalog Layanan</a>
+                <ul class="submenu">
+                    <li><a href="#">Eco-Education</a></li>
+                    <li><a href="#">Eco-Adventure</a></li>
+                    <li><a href="#">Eco-Homestay</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Eco-Homestay</h2>
+        <div class="homestay">
+            <img src="https://example.com/homestay1.jpg" alt="Homestay 1">
+            <div class="homestay-info">
+                <h3>Homestay A</h3>
+                <p>Profil: Homestay nyaman dengan suasana pedesaan asri.</p>
+                <p>Kamar: 2 | Kamar Mandi: 1 | Fasilitas: AC, WiFi, TV</p>
+                <p>Jarak ke tempat wisata: 5 km</p>
+                <p>Harga: Rp 250.000/malam</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="homestay">
+            <img src="https://example.com/homestay2.jpg" alt="Homestay 2">
+            <div class="homestay-info">
+                <h3>Homestay B</h3>
+                <p>Profil: Penginapan modern dengan pemandangan pegunungan.</p>
+                <p>Kamar: 3 | Kamar Mandi: 2 | Fasilitas: AC, WiFi, Kolam Renang</p>
+                <p>Jarak ke tempat wisata: 3 km</p>
+                <p>Harga: Rp 350.000/malam</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+        <div class="homestay">
+            <img src="https://example.com/homestay3.jpg" alt="Homestay 3">
+            <div class="homestay-info">
+                <h3>Homestay C</h3>
+                <p>Profil: Homestay tradisional dengan dekorasi kayu khas.</p>
+                <p>Kamar: 1 | Kamar Mandi: 1 | Fasilitas: WiFi, Dapur, Taman</p>
+                <p>Jarak ke tempat wisata: 7 km</p>
+                <p>Harga: Rp 200.000/malam</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
